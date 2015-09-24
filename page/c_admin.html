@@ -1,0 +1,140 @@
+<div class="custom-layout" style="height: 100%;overflow: hidden;">
+	<!-- north -->
+	<div class="north panel-north" style="height: 60px;">
+		<div class="navbar navbar-default" style="height: 60px;">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#"><img src="../img/login/logo.png"/></a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<p class="pull-right" style="line-height: 60px;">当前用户：<span id="adminName">点芯科技</span><a href="#" class="btn btn-default">退出</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="shadow"></div>
+	</div><!-- /north -->
+	<div class="center custom-layout" style="top: 63px;">
+		<!-- west --> 
+		<div class="west custom-layout panel-west" style="width: 210px; box-shadow: 0px 2px 10px #ccc;">
+			<div class="panel-group" id="accordion">
+			  <div class="panel panel-default">
+			    <div class="panel-heading">
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" data-parent="#accordion" 
+			          href="#collapseOne">
+			         	<div class="media-left">
+	                 		<span class="glyphicon glyphicon-list-alt"></span>
+	                 	</div>
+	                 	<div class="media-body text-center">
+	                 		基本信息
+	                 	</div>
+	                 	<div class="media-right">
+	                 		<span class="glyphicon glyphicon-menu-down"></span>
+	                 	</div>
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapseOne" class="panel-collapse collapse in">
+				    <div class="panel-body">
+				    	<div class="list-group">
+	                 		<a href="#" data-url = "right_body.html" class="list-group-item text-center active">账户信息</a>
+	                 		<a href="#" data-url = "store_list.html" class="list-group-item text-center">门店信息</a>
+	                 		<a href="#" data-url = "cashier_list.html" class="list-group-item text-center">收银员信息</a>
+	                 	</div> 
+				    </div>
+			    </div>
+			  </div>
+			  <div class="panel panel-default">
+			    <div class="panel-heading">
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" data-parent="#accordion" 
+			          href="#collapseTwo">
+			         	<div class="media-left">
+	                 		<span class="glyphicon glyphicon-usd"></span>
+	                 	</div>
+	                 	<div class="media-body text-center">
+	                 		交易流水
+	                 	</div>
+	                 	<div class="media-right">
+	                 		<span class="glyphicon glyphicon-menu-down"></span>
+	                 	</div>
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapseTwo" class="panel-collapse collapse">
+			      <div class="panel-body">
+			       		<div class="list-group">
+			       			<a href="#" data-url = "cash_today_list.html" class="list-group-item text-center">当日流水</a>
+			       			<a href="#" data-url = "cash_today_list.html" class="list-group-item text-center">昨日流水</a>
+			       			<a href="#" data-url="cash_history_list.html" class="list-group-item text-center">历史流水</a>
+			       		</div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="panel panel-default">
+			    <div class="panel-heading">
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" data-parent="#accordion" 
+			          href="#collapseThree">
+			          	<div class="media-left">
+	                 		<span class="glyphicon glyphicon-book"></span>
+	                 	</div>
+	                 	<div class="media-body text-center">
+	                 		报表统计
+	                 	</div>
+	                 	<div class="media-right">
+	                 		<span class="glyphicon glyphicon-menu-down"></span>
+	                 	</div>
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapseThree" class="panel-collapse collapse">
+			      <div class="panel-body">
+			        	<div class="list-group">
+			        		<a href="#" data-url = "report_today_list.html" class="list-group-item text-center">昨日报表</a>
+			        		<a href="#" data-url = "report_history_list.html" class="list-group-item text-center">历史报表</a>
+			        	</div>
+			      </div>
+			    </div>
+			  </div>
+			  
+			  <div class="panel panel-default">
+			    <div class="panel-heading">
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" data-parent="#accordion" 
+			          href="#collapseFour">
+			          	<div class="media-left">
+	                 		<span class="glyphicon glyphicon-cog"></span>
+	                 	</div>
+	                 	<div class="media-body text-center">
+	                 		账号管理
+	                 	</div>
+	                 	<div class="media-right">
+	                 		<span class="glyphicon glyphicon-menu-down"></span>
+	                 	</div>
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapseFour" class="panel-collapse collapse">
+			      <div class="panel-body">
+			        	<div class="list-group">
+			        		<a href="#" data-url="infoEditor.html" class="list-group-item text-center">信息修改</a>
+			        		<a href="#" data-url="password_edit.html" class="list-group-item text-center">密码修改</a>
+			        		<a href="#" data-url="subaccount_list.html" class="list-group-item text-center">子账号管理</a>
+			        	</div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<div class="shadow"></div>
+			<span class="toggle"></span>
+		</div><!-- /west -->
+		<!-- center -->
+		<div class="center panel-center bg-warning" style="left: 210px;">
+			<!-- map iframe -->
+			<iframe src="right_body.html" width="100%" height="100%" frameborder="0" id="centerIframe"></iframe>
+		</div><!-- /center -->
+		<div class="side" style="width: 260px;right: -260px;">
+		</div>
+	</div>
+</div>

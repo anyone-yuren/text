@@ -1,0 +1,118 @@
+<header id="header"></header>
+<div class="container-fluid" style="padding-top: 61px;">
+	<div class="panel panel-default">
+		<div class="panel-heading bg-danger">
+			<p class="text-left" style="margin: 0;">
+				(每天13点之前为出账期，请于13点之后查看昨日报表)
+			</p>
+		</div>
+		<div class="panel-body">
+			<form role="form" class="form-horizontal row" style="width: 400px;">
+				<div class="form-group">
+					<label for="" class="control-label col-sm-4">商户订单号:</label>
+					<div class="col-sm-8">
+						<input type="text" class="form-control col-sm-8" name="" id="" value="" />
+					</div>
+				</div>
+				
+				<p class="text-center">
+					<button class="btn btn-default btn-success">查询</button>
+					<button class="btn btn-default">导出</button>
+				</p>
+			</form>
+			<div class="row" id="payList">
+				<div class="col-md-2 text-center bg-white">
+					<p>交易中笔数</p>
+					<p>44</p>
+				</div>
+				<div class="col-md-2 text-center bg-white">
+					<p>交易金额</p>
+					<p>1,002.00</p>
+				</div>
+				<div class="col-md-2 text-center bg-white">
+					<p>退款总笔数</p>
+					<p>0.00</p>
+				</div>
+				<div class="col-md-2 text-center bg-white">
+					<p>总退款额</p>
+					<p>0.00</p>
+				</div>
+				<div class="col-md-2 text-center bg-white">
+					<p>交易净额</p>
+					<p>1，002.00</p>
+				</div>
+				<div class="col-md-2 text-center bg-white">
+					<p>总支付金额</p>
+					<p>1,002.00</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-body">
+			<table id="reportlist"></table>
+		</div>
+	</div>
+</div>
+
+<!--修改模态框-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
+   aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" 
+               data-dismiss="modal" aria-hidden="true">
+                  &times;
+            </button>
+            <h4 class="modal-title" id="myModalLabel" style="color: #0099CC;">
+             	<span class="glyphicon glyphicon-edit"></span>修改
+            </h4>
+         </div>
+         <div class="modal-body">
+         	<form role="form" id="editform" class="form-horizontal">
+				<div class="form-group">
+					<label class="col-sm-2 control-label">门店名称</label>
+					<div class="col-sm-10">
+						<input type="text" name="name" class="form-control" placeholder="请输入">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-2 control-label">所属商户</label>
+					<div class="col-sm-10">
+						<input type="text" name="basestore" class="form-control col-sm-10" placeholder="请输入">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-2 control-label">联系人</label>
+					<div class="col-sm-10">
+						<input type="text" name="linkman" class="form-control col-sm-10" placeholder="请输入">
+					</div>
+				</div>	
+				<div class="form-group">
+					<label class="col-sm-2 control-label">状态</label>
+					<div class="col-sm-10">
+						<div class="dropdown">
+							<a class="dropdown-toggle btn btn-default" id="droptitle" data-toggle="dropdown" href="#">全部<span class="caret"></span></a>
+							<ul class="dropdown-menu" id="dropmenu1" role="menu">
+								<li> <a href="#" data-index="0" class="text-center">全部</a></li>
+								<li> <a href="#" data-index="1" class="text-center">审核中</a></li>
+								<li> <a href="#" data-index="2" class="text-center">已激活</a></li>
+								<li> <a href="#" data-index="3" class="text-center">停用</a></li>
+								<li> <a href="#" data-index="4" class="text-center">删除</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</form>
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-default" 
+               data-dismiss="modal">关闭
+            </button>
+            <button type="button" id="update" class="btn btn-primary">
+            	  提交更改
+            </button>
+         </div>
+      </div><!-- /.modal-content -->
+</div><!-- /.modal -->

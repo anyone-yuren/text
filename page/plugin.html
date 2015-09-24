@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>点芯商户后台管理</title>
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/layout.css" />
+		<link rel="stylesheet" type="text/css" href="../css/custom-grid.css" />
+		<link rel="stylesheet" type="text/css" href="../css/custom-page.css" />
+		<style>
+			.panel{
+				  background-color: #f8f8f8;
+			}
+			#payList{
+				margin: 10px auto;
+			}
+			#payList [class*="col"]{
+				padding: 10px;
+			}
+		</style>
+	</head>
+	<body>
+	</body>
+	<script src="../libs/jquery.min.js"></script>
+		<script src="../libs/bootstrap.min.js"></script>
+		<script src="../libs/ichain.js"></script>
+		<script>
+			window.APP = {};
+		</script>
+		<script src="../js/controller/common.js"></script>
+		<script src="../js/view/common.js"></script>
+		<script src="../js/controller/subaccountList.js"></script>
+		<script src="../js/view/subaccountList.js"></script>
+		<script src="../libs/plugin.js"></script>
+		 
+		<script>
+			//程序入口
+			APP.controller.subaccountList.start();
+		</script>
+</html>

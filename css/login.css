@@ -1,0 +1,56 @@
+
+.navbar{
+	min-height: 60px;
+}
+.navbar-header{
+	/*background: red;*/
+	margin-left: 200px !important;
+}
+
+.navbar-collapse strong{
+	line-height: 60px;
+	margin-right: 200px;
+}
+
+.navbar-brand{
+	
+}
+
+
+/*content*/
+.container-fluid{
+	position: relative;
+	padding: 0;
+}
+.banner{
+	margin-top: 60px;
+	height: 410px;
+	width: 100%;
+	background: url(../img/login/banner.jpg) scroll center 0px no-repeat;
+	background-size: cover;
+	
+}
+
+form.form-horizontal.login {
+   position: absolute;
+  z-index: 1;
+  background-color: #fff;
+  padding: 30px;
+  right: 20%;
+  top: 50%;
+ margin-top: -169px;;
+}
+.login{
+	
+}
+.login .input-group{
+	margin-bottom: 15px;
+}
+.form-horizontal{
+	width: 321px;
+}
+
+.checkadmin{
+	margin-left: 20px;
+}
+

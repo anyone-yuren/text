@@ -1,0 +1,12 @@
+{
+	"path": "/fjdx",
+	"paths": "/fjdx",
+	"master": {
+		"other": {
+			"login": {
+				"method": "POST",
+				"value": "data/do_login.json"
+			}
+		}
+	}
+}

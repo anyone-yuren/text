@@ -1,0 +1,162 @@
+::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+	background-color: transparent;
+}
+::-webkit-scrollbar-track-piece {
+}
+::-webkit-scrollbar-thumb {
+	background-color: #999;
+	background-color: rgba(0, 0, 0, 0.4);
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background-color: #808080;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+body {
+	font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
+
+/*常用样式*/
+.mid-align {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.popover-title .close {
+	position: relative;
+	top: -2px;
+}
+
+/*布局*/
+.custom-layout {
+	position: relative;
+	width: 100%;
+}
+.custom-layout>div {
+	position: absolute;
+}
+.custom-layout .north, .custom-layout .south {
+	width: 100%;
+	z-index: 1;
+}
+.custom-layout .west, .custom-layout .east {
+	height: 100%;
+	z-index: 1;
+}
+.custom-layout .center, .custom-layout .west {
+	left: 0;
+}
+.custom-layout .center, .custom-layout .east {
+	right: 0;
+}
+.custom-layout .center, .custom-layout .north {
+	top: 0;
+}
+.custom-layout .center, .custom-layout .south {
+	bottom: 0;
+}
+
+
+
+/*panel region*/
+
+.panel-north .shadow {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: -3px;
+	height: 3px;
+	background: url(../img/shadow_hor.png) repeat-x;
+}
+.panel-north  #adminName{
+	margin-right: 10px;
+}
+.panel-north h1 {
+	color: #fff;
+	margin: 0;
+	line-height: 60px;
+	font-size: 24px;
+	padding-left: 1em;
+}
+.panel-north .nav {
+	float: right;
+	height: 60px;
+	line-height: 60px;
+	font-size: 0;/* 父元素设置font-size为0，子元素设置font-size解决inline-block引起的间隙问题 */
+}
+.panel-north .nav li {
+	display: inline-block;
+	border-right: 1px solid #a6ccfd;
+	font-size: 14px;
+	padding: 0 15px;
+}
+.panel-center {
+	overflow: hidden;
+}
+.panel-west {
+}
+
+.panel-body .list-group{
+	margin-bottom: 0;
+}
+.panel-body .list-group .list-group-item{
+	border-left: 0;
+	border-right: 0;
+}
+.panel-body .list-group .list-group-item:first-child{
+	border-top: 0;
+}
+.panel-default>.panel-heading {
+  background-color: #f8f8f8;
+}
+.panel-west .container-fluid{
+	padding: 0;
+	margin-top: 2px;
+}
+.panel-title .media-left span,.panel-title .media-right span{
+	color: #ccc;
+}
+.panel-west .shadow {
+	position: absolute;
+	top: 0px;
+	bottom: 0;
+	right: -4px;
+	width: 4px;
+	background: url(../img/shadow_ver.png) repeat-y;
+}
+.panel-west .toggle {
+	width: 22px;
+	height: 64px;
+	position: absolute;
+	display: block;
+	background: url(../img/toggle.png) -2px -64px no-repeat;
+	top: 50%;
+	margin-top: -32px;
+	right: -22px;
+	cursor: pointer;
+}
+.panel-west .toggle.right {
+	background-position: -2px 0;
+}
+
+
+/*点击样式*/
+.active{
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#79bd6e,endColorStr=#62a855); /*IE 6 7 8*/ 
+
+	background: -ms-linear-gradient(top, #79bd6e ,  #62a855);        /* IE 10 */
+	
+	background:-moz-linear-gradient(top,#79bd6e,#62a855);/*火狐*/ 
+	
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#79bd6e), to(#62a855));/*谷歌*/ 
+	
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#79bd6e), to(#62a855));      /* Safari 4-5, Chrome 1-9*/
+	
+	background: -webkit-linear-gradient(top, #79bd6e, #62a855);   /*Safari5.1 Chrome 10+*/
+	
+	background: -o-linear-gradient(top, #79bd6e, #62a855);  /*Opera 11.10+*/
+}

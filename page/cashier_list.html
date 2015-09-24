@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>点芯商户后台管理</title>
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/layout.css" />
+		<link rel="stylesheet" href="../css/bootstrap-table.css" />
+	</head>
+	<body>
+	</body>
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<script src="../libs/jquery.min.js"></script>
+	<script src="../libs/bootstrap.min.js"></script>
+	<script src="../libs/bootstrap-table.js"></script>
+	<script src="../libs/ichain.js"></script>
+	<script>
+		window.APP = {}; 
+	</script>
+	<script src="../js/config.js"></script>
+	<script src="../js/controller/common.js"></script>
+	<script src="../js/view/common.js"></script>
+	<script src="../js/view/cashierList.js"></script>
+	<script src="../js/controller/cashierList.js"></script>
+	<script>
+		APP.urls = {
+			//删除数据
+			remove:'/data/admin.json',
+			remove_test:'/data/admin.json',
+			//修改数据
+			update:'/data/admin.json',
+			update_test:'/data/admin.json'
+		}
+		APP.controller.cashierList.start();
+	</script>
+</html>

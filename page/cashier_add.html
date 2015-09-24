@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>新增门店</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="../css/layout.css" />
+		<style>
+			.panel{
+				  background-color: #f8f8f8;
+			}
+			.pst {
+				  position: absolute;
+				  right: 0px;
+				  top: 50%;
+				  margin-top: -10px;
+				}
+		</style>
+	</head>
+	<body>
+		<div class="container-fluid" style="padding-top: 61px;">
+			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#"><span style="color: limegreen; font-size: 30px;" class="glyphicon glyphicon-plus"></span></a>
+					</div>
+					<div class="collapse navbar-collapse">
+						<h3>新增收银员</h3>
+					</div>
+				</div>
+			</nav>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					注：以下信息，带 * 的为必填项
+				</div>
+				<div class="panel-body">
+					<form role="form" class="form-horizontal" style="width: 400px;">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">所属商户：</label>
+							<div class="col-sm-8">	
+								<a href="#" class="dropdown-toggle btn btn-default btn-block" data-toggle="dropdown">请选择 <span class="caret"></span></a>
+								<ul class="dropdown-menu dropdown-menu-right" role="menu">
+									<li class=""><a href="#">审核中</a></li>
+									<li class=""><a href="#">激活</a></li>
+									<li class=""><a href="#">停用</a></li>
+									<li class=""><a href="#">删除</a></li>
+								</ul>
+								<div class="pst">*</div>
+							</div>					
+						</div>
+						<div class="form-group">
+							<label class="col-sm-4 control-label">门店名称：</label>
+							<div class="col-sm-8">	
+								<a href="#" class="dropdown-toggle btn btn-default btn-block" data-toggle="dropdown">请选择 <span class="caret"></span></a>
+								<ul class="dropdown-menu dropdown-menu-right" role="menu">
+									<li class=""><a href="#">审核中</a></li>
+									<li class=""><a href="#">激活</a></li>
+									<li class=""><a href="#">停用</a></li>
+									<li class=""><a href="#">删除</a></li>
+								</ul>
+								<div class="pst">*</div>
+							</div>					
+						</div>
+						<div class="form-group">
+							<label class="col-sm-4 control-label">收银员姓名：</label>
+							<div class="col-sm-8">
+								<input type="text" class="form-control col-sm-1" placeholder="请输入">
+								<div class="pst">*</div>
+							</div>
+							
+						</div>
+						<div class="form-group">
+							<label class="col-sm-4 control-label">登录账号：</label>
+							<div class="col-sm-8">
+								<input type="text" class="form-control col-sm-10" placeholder="请输入">
+								<div class="pst">*</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-4 control-label">登录密码：</label>
+							<div class="col-sm-8">
+								<input type="password" class="form-control col-sm-10" placeholder="请输入">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-4 control-label">联系电话：</label>
+							<div class="col-sm-8">
+								<input type="text" class="form-control col-sm-10" placeholder="请输入">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-4 control-label">邮箱地址：</label>
+							<div class="col-sm-8">
+								<input type="number" class="form-control col-sm-10" placeholder="请输入">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-4 control-label">备注信息：</label>
+							<div class="col-sm-8">
+								<input type="email" class="form-control col-sm-10" placeholder="请输入">
+							</div>
+						</div>
+						
+						<div class="form-group  text-center">
+							<button class="btn btn-default btn-success" type="submit">保存</button>
+							<button class="btn btn-default" id="back" type="button">返回</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../libs/jquery.min.js"></script>
+	<script src="../libs/bootstrap.min.js"></script>
+	<script src="../libs/ichain.js"></script>
+	<script>
+		window.APP = {};
+	</script>
+	<script src="../js/controller/common.js"></script>
+	<script src="../js/view/common.js"></script>
+	<script src="../js/controller/cashierAdd.js"></script>
+	<script>
+		APP.controller.cashierAdd.start();
+	</script>
+</html>

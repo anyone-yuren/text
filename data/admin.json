@@ -1,0 +1,9 @@
+{
+	"code": 0,
+	"msg": "OK",
+	"data": {
+		"userName": "大雨",
+		"userId": 1001,
+		"password": "dayu"
+	}
+}

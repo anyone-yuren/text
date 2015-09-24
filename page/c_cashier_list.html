@@ -1,0 +1,207 @@
+<header id="header">
+	
+</header>
+<div class="container-fluid" style="padding-top: 61px;">
+	<div class="panel panel-default">
+		<div class="panel-body">
+			<form role="form" class="form-horizontal" style="width: 400px;">
+				<div class="form-group">
+					<label class="col-sm-4 control-label">所属商户：</label>
+					<div class="col-sm-8">
+						<input type="text" class="form-control" placeholder="请输入">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-4 control-label">门店名称：</label>
+					<div class="col-sm-8">
+						<input type="text" class="form-control col-sm-10" placeholder="请输入">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-4 control-label">收银员账号：</label>
+					<div class="col-sm-8">
+						<input type="text" class="form-control" placeholder="请输入">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-4 control-label">收银员姓名：</label>
+					<div class="col-sm-8">
+						<div class="col-sm-5 p0_0">
+							<input type="text" class="form-control"  name="" id="" value="" />
+						</div>
+						<div class="col-sm-2" style="height: 34px; line-height: 34px;">至</div>
+						<div class="col-sm-5 p0_0">
+							<input type="text" class="form-control" name="" id="" value="" />
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="" class="col-sm-4 control-label">状态：</label>
+					<div class="col-sm-8">
+						<div class="dropdown">
+							<a class="dropdown-toggle btn btn-default" data-toggle="dropdown" href="#">全部<span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li> <a href="#" class="text-center">全部</a></li>
+								<li> <a href="#" class="text-center">审核中</a></li>
+								<li> <a href="#" class="text-center">已激活</a></li>
+								<li> <a href="#" class="text-center">停用</a></li>
+								<li> <a href="#" class="text-center">删除</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="col-sm-offset-4 col-sm-8">
+						<button class="btn btn-default btn-success">查询</button>
+					</div>
+				</div>
+			</form>
+			
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<p class="text-right" style="margin: 0;">
+						<button type="button" class="btn btn-default" id="add">新增记录</button>
+					</p>
+				</div>
+				<div class="panel-body">
+					<table id="storelist" class="table">
+					</table>
+					<!--<div id="grid1" style="border-radius: 5px; margin: 10px; border: 1px solid rgb(221, 221, 221); overflow: scroll; width: 100%; height: 100%;" class="custom-grid">
+						<div class="custom-grid-head">
+							<ul class="list-unstyled">
+								<li style="width: 30px;">
+									<input type="checkbox" name="custom_grid_checkall" value="#">
+								</li>
+								<li style="width: 30px;">#</li>
+								<li style="width: 140px;">门店编号</li>
+								<li style="width: 100px;">门店名称</li>
+								<li style="width: 200px;">所属商户</li>
+								<li style="width: 200px;">门店APPId</li>
+								<li style="width: 100px;">联系人</li>
+								<li style="width: 100px;">状态</li>
+								<li style="width: 200px;">操作</li>
+							</ul>
+						</div>
+						<div class="custom-grid-body" style="height: 200px;">
+							<ul data-index="0" class="list-unstyled">
+								<li style="width: 30px;">
+									<input type="checkbox" name="custom_grid_checkone" value="1">
+								</li>
+								<li style="width: 30px;">1</li>
+								<li style="width: 140px;">乐芙兰</li>
+								<li style="width: 100px;"><span data-key-gender="" data-key="女">女</span></li>
+								<li style="width: 200px;"><span>上海安德鲁森食品有限公司	</span></li>
+								<li style="width: 200px;">s20150722000001503 </li>
+								<li class="actioncolumn" style="width: 100px;">
+									赫鲁晓夫
+								</li>
+								<li style="width: 100px;">正常</li>
+								<li style="width:200px" class="actioncolumn">
+									<button class="btn btn-info btn-sm" data-key="5-0">详情</button>
+									<button class="btn btn-warning btn-sm" data-key="5-1">修改</button>
+									<button class="btn btn-danger btn-sm" data-key="5-2">删除</button>
+								</li>
+							</ul>
+							<div class="custom-grid-drop" style="display: none;"></div>
+							<ul data-index="1" class="list-unstyled">
+								<li style="width: 30px;">
+									<input type="checkbox" name="custom_grid_checkone" value="2">
+								</li>
+								<li style="width: 30px;">2</li>
+								<li style="width: 140px;">561586234485</li>
+								<li style="width: 100px;"><span data-key-gender="" data-key="男">男</span></li>
+								<li style="width: 200px;"><span>上海安德鲁森食品有限公司	</span></li>
+								<li style="width: 200px;">s20150722000001503 </li>
+								<li class="actioncolumn" style="width: 100px;">
+									终于
+								</li>
+								<li style="width: 100px;">正常</li>
+								<li style="width: 200px;" class="actioncolumn">
+									<button class="btn btn-info btn-sm" data-key="5-0" style="">详情</button>
+									<button class="btn btn-warning btn-sm" data-key="5-1">修改</button>
+									<button class="btn btn-danger btn-sm" data-key="5-2">删除</button>
+								</li>
+							</ul>
+							<div class="custom-grid-drop"></div>
+						</div>
+						<div class="custom-grid-foot" style="display: block;">
+							<div class="custom-grid-page custom-page">
+								<a href="javascript:;" class="prevPage">首页</a>
+								<a href="javascript:;" class="tcdNumber disabled">&laquo;</a>
+								<a href="javascript:;">1/6</a>
+								<a href="javascript:;" class="tcdNumber">&raquo;</a>
+								<a href="javascript:;" class="nextPage">尾页</a>
+								<input type="number" name="" id="" value=""  style="width: 50px; margin-left: 20px; height: 34px;"/>
+								<button type="button" class="btn btn-default">跳转</button>
+							</div>
+						</div>
+					</div>-->
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+<!--修改模态框-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
+   aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" 
+               data-dismiss="modal" aria-hidden="true">
+                  &times;
+            </button>
+            <h4 class="modal-title" id="myModalLabel" style="color: #0099CC;">
+             	<span class="glyphicon glyphicon-edit"></span>修改
+            </h4>
+         </div>
+         <div class="modal-body">
+         	<form role="form" id="editform" class="form-horizontal">
+				<div class="form-group">
+					<label class="col-sm-2 control-label">门店名称</label>
+					<div class="col-sm-10">
+						<input type="text" name="name" class="form-control" placeholder="请输入">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-2 control-label">所属商户</label>
+					<div class="col-sm-10">
+						<input type="text" name="basestore" class="form-control col-sm-10" placeholder="请输入">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-2 control-label">联系人</label>
+					<div class="col-sm-10">
+						<input type="text" name="linkman" class="form-control col-sm-10" placeholder="请输入">
+					</div>
+				</div>	
+				<div class="form-group">
+					<label class="col-sm-2 control-label">状态</label>
+					<div class="col-sm-10">
+						<div class="dropdown">
+							<a class="dropdown-toggle btn btn-default" id="droptitle" data-toggle="dropdown" href="#">全部<span class="caret"></span></a>
+							<ul class="dropdown-menu" id="dropmenu1" role="menu">
+								<li> <a href="#" data-index="0" class="text-center">全部</a></li>
+								<li> <a href="#" data-index="1" class="text-center">审核中</a></li>
+								<li> <a href="#" data-index="2" class="text-center">已激活</a></li>
+								<li> <a href="#" data-index="3" class="text-center">停用</a></li>
+								<li> <a href="#" data-index="4" class="text-center">删除</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</form>
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-default" 
+               data-dismiss="modal">关闭
+            </button>
+            <button type="button" id="update" class="btn btn-primary">
+            	  提交更改
+            </button>
+         </div>
+      </div><!-- /.modal-content -->
+</div><!-- /.modal -->
